@@ -14,7 +14,7 @@ class App extends React.Component {
 
   componentWillMount() {
     axios
-      .get('http://localhost:5000/teams')
+      .get('https://next-games.herokuapp.com/teams')
       .then(res => {
         this.setState({ teams: res.data.teams.items });
       })
@@ -27,7 +27,7 @@ class App extends React.Component {
     this.setState({ games: [] });
     if (event.target.value) {
       axios
-        .get(`http://localhost:5000/teams/${event.target.value}`)
+        .get(`https://next-games.herokuapp.com/teams/${event.target.value}`)
         .then(res => {
           this.setState({ games: res.data.calendar.items });
         })
