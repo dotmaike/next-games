@@ -40,7 +40,7 @@ class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Header />
+        <Header title="NEXT Games!" />
         <section>
           {this.state.teams.length > 0 && (
             <React.Suspense fallback={<Spinner />}>

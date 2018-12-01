@@ -65,4 +65,4 @@ Teams.defaultProps = {
   teams: []
 }
 
-export default withStyles(styles)(Teams);
+export default React.memo(withStyles(styles)(Teams));

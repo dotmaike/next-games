@@ -20,7 +20,7 @@ const Header = props => (
     <AppBar position="static">
       <Toolbar>
         <Typography variant="h6" color="inherit" className={props.classes.grow}>
-          NEXT Games!
+          {props.title}
         </Typography>
         <Button color="inherit">Login</Button>
       </Toolbar>
